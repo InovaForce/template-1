@@ -732,7 +732,7 @@ figure {
   display: inline-block;
   zoom: 1;
   *display: inline;
-  color: rgb(157, 135, 52);
+  color: whitesmoke;
   padding-left: 10px;
   padding-right: 10px;
 }
