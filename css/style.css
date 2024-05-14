@@ -1272,6 +1272,7 @@ form label {
 }
 
 #fh5co-started {
+  height: 50% !important;
   position: relative;
 }
 #fh5co-started .overlay {
@@ -1338,6 +1339,23 @@ form label {
   margin-bottom: 0;
 }
 
+#fh5co-footer {
+  padding: 0 !important;
+  background-color: #444;
+  position: relative;
+}
+#fh5co-footer .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(113, 113, 113, 0.4);
+  z-index: 98;
+}
+#fh5co-footer .copyright {
+  z-index: 99;
+}
 @media screen and (max-width: 768px) {
   #fh5co-footer .copyright .pull-left,
   #fh5co-footer .copyright .pull-right {
@@ -1347,6 +1365,9 @@ form label {
 }
 #fh5co-footer .copyright .block {
   display: block;
+}
+#fh5co-footer .social {
+  z-index: 99;
 }
 
 .owl-carousel .owl-controls .owl-dot span {

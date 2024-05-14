@@ -1327,6 +1327,7 @@ form {
 }
 
 #fh5co-started {
+  height: 50% !important;
   position: relative;
   .overlay {
     position: absolute;
@@ -1400,10 +1401,26 @@ form {
       margin-bottom: 0;
     }
   }
+
+
 }
 
 #fh5co-footer {
+  padding: 0!important;
+  background-color:#444;
+  position: relative;
+  
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(113, 113, 113, 0.4);
+      z-index: 98;
+    }
   .copyright {
+    z-index: 99;
     .pull-left,
     .pull-right {
       @media screen and (max-width: $screen-sm) {
@@ -1415,6 +1432,9 @@ form {
     .block {
       display: block;
     }
+  }
+  .social{
+    z-index: 99;
   }
 }
 
