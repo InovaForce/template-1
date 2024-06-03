@@ -173,12 +173,12 @@ figure {
 }
 .fh5co-nav {
   position: absolute;
-  top: 0;
-  margin: 0;
-  padding: 0;
+  top: 20px;
+  margin: 0; 
   width: 100%;
-  padding: 40px 0;
+  padding: 40px px;
   z-index: 1001;
+  right: 10px;
   @media screen and (max-width: $screen-sm) {
     padding: 20px 0;
   }
@@ -1027,7 +1027,7 @@ form {
 #fh5co-gallery,
 .fh5co-section {
   height: 100%;
-  padding: 7em 0;
+  padding: 8em 0;
   clear: both;
   @media screen and (max-width: $screen-sm) {
     padding: 3em 0;
@@ -1425,12 +1425,13 @@ form {
     .pull-right {
       @media screen and (max-width: $screen-sm) {
         float: none !important;
-        // margin-bottom: 0;
+        margin-bottom: 0;
         text-align: center;
       }
     }
     .block {
       display: block;
+      margin-top: 20px;
     }
   }
   .social{
@@ -1608,11 +1609,11 @@ form {
   }
   &.fh5co-nav-white {
     > i {
-      color: $brand-white;
-      background: RGB(157 135 52);
+      color:rgb(157 135 52);
+      background: rgb(157 135 52);
       &::before,
       &::after {
-        background: $brand-white;
+        background:rgb(157 135 52);;
       }
     }
   }
@@ -1660,7 +1661,7 @@ form {
   display: block;
   margin: 0 auto;
   display: none;
-  // background: #f86942;
+
   height: 44px;
   width: 44px;
   z-index: 2001;
@@ -1876,3 +1877,4 @@ form {
     opacity: 0;
   }
 }
+

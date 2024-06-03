@@ -87,12 +87,12 @@ figure {
 
 .fh5co-nav {
   position: absolute;
-  top: 0;
+  top: 20px;
   margin: 0;
-  padding: 0;
   width: 100%;
-  padding: 40px 0;
+  padding: 40px px;
   z-index: 1001;
+  right: 10px;
 }
 @media screen and (max-width: 768px) {
   .fh5co-nav {
@@ -958,7 +958,7 @@ form label {
 #fh5co-gallery,
 .fh5co-section {
   height: 100%;
-  padding: 7em 0;
+  padding: 8em 0;
   clear: both;
 }
 @media screen and (max-width: 768px) {
@@ -1360,11 +1360,13 @@ form label {
   #fh5co-footer .copyright .pull-left,
   #fh5co-footer .copyright .pull-right {
     float: none !important;
+    margin-bottom: 0;
     text-align: center;
   }
 }
 #fh5co-footer .copyright .block {
   display: block;
+  margin-top: 20px;
 }
 #fh5co-footer .social {
   z-index: 99;
@@ -1521,11 +1523,11 @@ form label {
   transition: all 0.2s ease-out;
 }
 .fh5co-nav-toggle.fh5co-nav-white > i {
-  color: #fff;
-  background: RGB(157 135 52);
+  color: rgb(157, 135, 52);
+  background: rgb(157, 135, 52);
 }
 .fh5co-nav-toggle.fh5co-nav-white > i::before, .fh5co-nav-toggle.fh5co-nav-white > i::after {
-  background: #fff;
+  background: rgb(157, 135, 52);
 }
 
 .fh5co-nav-toggle i::before {

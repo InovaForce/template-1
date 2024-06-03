@@ -119,7 +119,7 @@
 										<a href="gallery.html">Gallery</a>
 
 									</li>
-									<li><a href="contact.html">Contact</a></li>
+									<!-- <li><a href="contact.html">Contact</a></li> -->
 								</ul>
 							</div>
 						</div>
@@ -570,6 +570,15 @@
 		<div class="container">
 			<div class="row animate-box">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+					<audio id="background-music" loop>
+						<source src="music/bossa-in-my-heart-13187.mp3" type="audio/mpeg">
+						Tarayıcınız audio elementini desteklemiyor.
+					</audio>
+					<div id="icon-container">
+						<span id="play-icon" class="play-icon"><span class="material-symbols-outlined">
+music_note
+</span></span>
+						<span id="pause-icon" class="pause-icon"><i class="fa-solid fa-volume-xmark"></i></span>
 					<h2>Katılım durumunuzu bildirmenizi rica ederiz.</h2>
 					<p>Katılım durumunuzu aşağıdaki formu doldurarak bize bildirebilirsiniz.Teşekkür ederiz.</p>
 				</div>
@@ -598,13 +607,15 @@
 		</div>
 
 	</div>
+	
+</div>
 
 	<footer id="fh5co-footer" role="contentinfo" style="background-image:url(images/background/140-gradient.png);">
 			<div class="container">
 				<div class="row copyright">
 					<div class="social col-md-12 text-center">
 						<p>
-							<small class="block" style="color:whitesmoke ">&copy; 2024 Made by Şule Demir.Tüm Hakları Saklıdır.</small>
+							<small class="block" style="color:whitesmoke">&copy; 2024 Made by Şule Demir.Tüm Hakları Saklıdır.</small>
 
 						</p>
 						<p>
@@ -618,10 +629,13 @@
 					</div>
 				</div>
 			</div>
+
 	</footer>
 
 
 </div>
+		
+
 	<div class="gototop js-top">
 		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
 	</div>
@@ -647,6 +661,7 @@
 	<!-- Main -->
 	<script src="js/main.js"></script>
 	<script src="js/index.js"></script>
+	<script src="js/player.js"></script>
 
 
 
