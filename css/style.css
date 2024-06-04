@@ -1354,6 +1354,7 @@ form label {
   z-index: 98;
 }
 #fh5co-footer .copyright {
+  padding-top: 20px;
   z-index: 99;
 }
 @media screen and (max-width: 768px) {
@@ -1364,9 +1365,21 @@ form label {
     text-align: center;
   }
 }
-#fh5co-footer .copyright .block {
-  display: block;
-  margin-top: 20px;
+#fh5co-footer #icon-container button {
+  position: fixed;
+  bottom: 75px;
+  right: 25px;
+  border: 1px solid #fff;
+  display: table;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 0;
+  z-index: 99;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
 }
 #fh5co-footer .social {
   z-index: 99;
@@ -1458,7 +1471,7 @@ form label {
 
 .gototop {
   position: fixed;
-  bottom: 20px;
+  bottom: 17px;
   right: 20px;
   z-index: 999;
   opacity: 0;
@@ -1470,7 +1483,7 @@ form label {
   visibility: visible;
 }
 .gototop a {
-  width: 50px;
+  width: 40px;
   height: 50px;
   display: table;
   background: rgba(0, 0, 0, 0.5);

@@ -50,6 +50,8 @@
 
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
+
+	<link rel="stylesheet" href="css/modal.css" />
 	<!-- FOR IE9 below -->
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
@@ -72,7 +74,7 @@
 						<div class="display-tc animate-box" data-animate-effect="fadeIn">
 							<h1 class="baslik" style="line-height: 85%;"><span>Mervenur</span><br> &amp;<br> <span>
 									Muhammed Fatih</span></h1>
-									<br>
+							<br>
 							<h2 class="yazı">Düğün törenimizde sizleri de aramızda görmekten mutlukluk duyarız.</h2>
 							<div class="row">
 								<div class="col-sm-6">
@@ -570,15 +572,7 @@
 		<div class="container">
 			<div class="row animate-box">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<audio id="background-music" loop>
-						<source src="music/bossa-in-my-heart-13187.mp3" type="audio/mpeg">
-						Tarayıcınız audio elementini desteklemiyor.
-					</audio>
-					<div id="icon-container">
-						<span id="play-icon" class="play-icon"><span class="material-symbols-outlined">
-music_note
-</span></span>
-						<span id="pause-icon" class="pause-icon"><i class="fa-solid fa-volume-xmark"></i></span>
+
 					<h2>Katılım durumunuzu bildirmenizi rica ederiz.</h2>
 					<p>Katılım durumunuzu aşağıdaki formu doldurarak bize bildirebilirsiniz.Teşekkür ederiz.</p>
 				</div>
@@ -607,34 +601,55 @@ music_note
 		</div>
 
 	</div>
-	
-</div>
+
+	</div>
+	<div id="modal-container" class="one out">
+		<div class="modal-background">
+		  <div class="modal">
+			<h2><u>Contributors</u></h2>
+			
+		  </div>
+		</div>
+	  </div>
+  
+	  <hr />
 
 	<footer id="fh5co-footer" role="contentinfo" style="background-image:url(images/background/140-gradient.png);">
-			<div class="container">
-				<div class="row copyright">
-					<div class="social col-md-12 text-center">
-						<p>
-							<small class="block" style="color:whitesmoke">&copy; 2024 Made by Şule Demir.Tüm Hakları Saklıdır.</small>
-
-						</p>
-						<p>
-						<ul class="fh5co-social-icons">
-							<li><a href="#"><i class="icon-twitter"></i></a></li>
-							<li><a href="#"><i class="icon-facebook"></i></a></li>
-							<li><a href="#"><i class="icon-linkedin"></i></a></li>
-							<li><a href="#"><i class="icon-dribbble"></i></a></li>
-						</ul>
-						</p>
-					</div>
+		<div class="container">
+			<div class="row copyright">
+				<div class="socal col-md-12 text-center">
+					<span class="copyright">
+						&copy;
+						<span class="copyright-date"></span>
+						<span class="copyright-link"style="color:whitesmoke">&copy;Made by Şule Demir.</span>
+					</span>
+					
+					<p>
+					<ul class="fh5co-social-icons">
+						<li><a href="#modal-container"><i class="fa-solid fa-envelope"></i></a></li>
+						<li><a href="#"><i class="icon-twitter"></i></a></li>
+						<li><a href="#"><i class="icon-facebook"></i></a></li>
+						<li><a href="#"><i class="icon-linkedin"></i></a></li>
+						<li><a href="#"><i class="icon-dribbble"></i></a></li>
+					</ul>
+					</p>
 				</div>
+			</div>
+			<audio id="background-music" loop>
+				<source src="music/say-yes-to-heaven-212491.mp3" type="audio/mpeg">
+				Tarayıcınız audio elementini desteklemiyor.
+			</audio>
+			<div id="icon-container">
+				<button id="play-icon" class="play-icon" onclick="document.getElementById('background-music').play()"><i class="fa-solid fa-volume-off"></i></button>
+				</i></button>
+				<button id="pause-icon" class="pause-icon" ><i class="fa-solid fa-volume-xmark"></i></button>
 			</div>
 
 	</footer>
 
 
-</div>
-		
+	</div>
+
 
 	<div class="gototop js-top">
 		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
@@ -662,6 +677,7 @@ music_note
 	<script src="js/main.js"></script>
 	<script src="js/index.js"></script>
 	<script src="js/player.js"></script>
+	<script type="module" src="js/app.js"></script>
 
 
 

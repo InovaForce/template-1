@@ -1420,6 +1420,7 @@ form {
       z-index: 98;
     }
   .copyright {
+    padding-top: 20px;
     z-index: 99;
     .pull-left,
     .pull-right {
@@ -1429,16 +1430,35 @@ form {
         text-align: center;
       }
     }
-    .block {
-      display: block;
-      margin-top: 20px;
-    }
   }
+  #icon-container {
+    
+    button {
+      position: fixed;
+      bottom:75px;
+      right: 25px;
+      border: 1px solid $brand-white;
+      display: table;
+      background: rgba(0, 0, 0, 0.5);
+      color: $brand-white;      
+      cursor: pointer;
+      font-size: 14px;
+      padding: 0;
+      z-index: 99;
+      width: 35px;
+      height: 35px;
+      @include border-radius(50%);
+  
+    }
+    
+  
+   
+  }
+    
   .social{
     z-index: 99;
   }
 }
-
 // Owl
 .owl-carousel .owl-controls .owl-dot {
   span {
@@ -1535,7 +1555,7 @@ form {
 }
 .gototop {
   position: fixed;
-  bottom: 20px;
+  bottom: 17px;
   right: 20px;
   z-index: 999;
   opacity: 0;
@@ -1546,7 +1566,7 @@ form {
     visibility: visible;
   }
   a {
-    width: 50px;
+    width: 40px;
     height: 50px;
     display: table;
     background: rgba(0, 0, 0, 0.5);
